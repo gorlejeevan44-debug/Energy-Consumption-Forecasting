@@ -1,41 +1,58 @@
-# ⚡ Household Energy Consumption Forecasting
+# ⚡ Energy Consumption Forecasting Using Machine Learning
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-This project predicts household energy consumption using Machine Learning and historical electricity usage data. The model analyzes electrical measurements and time-based features to estimate power consumption.
+## 📌 Overview
 
-The project was developed as part of my Machine Learning and Data Analytics learning journey to gain practical experience with real-world datasets, data preprocessing, visualization, feature engineering, and predictive modeling.
+Energy consumption forecasting is an important task in energy management systems. Accurate predictions help optimize energy usage, reduce wastage, and support better decision-making.
+
+This project uses Machine Learning techniques to predict household energy consumption based on electrical measurements and time-related features. The model is trained on real-world household power consumption data and evaluated using standard regression metrics.
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
 * Analyze household electricity consumption patterns.
-* Clean and preprocess a large real-world dataset.
-* Create meaningful visualizations for data analysis.
-* Build a Machine Learning model for energy consumption prediction.
+* Perform data cleaning and preprocessing.
+* Extract meaningful time-based features.
+* Visualize relationships between electrical parameters.
+* Train a Machine Learning model for prediction.
 * Evaluate model performance using regression metrics.
-* Save preprocessing components for future predictions.
+* Save trained components for future use.
 
 ---
 
-## Dataset
+## 📊 Dataset
 
-This project uses the **Individual Household Electric Power Consumption Dataset** from the UCI Machine Learning Repository.
+This project uses the **Individual Household Electric Power Consumption Dataset**.
 
-Due to GitHub file size limitations, the dataset is not included in this repository.
+### Dataset Features
 
-### Download Dataset
+| Feature               | Description                                  |
+| --------------------- | -------------------------------------------- |
+| Date                  | Date of observation                          |
+| Time                  | Time of observation                          |
+| Global_active_power   | Total active power consumed                  |
+| Global_reactive_power | Reactive power consumed                      |
+| Voltage               | Household voltage                            |
+| Global_intensity      | Current intensity                            |
+| Sub_metering_1        | Kitchen energy consumption                   |
+| Sub_metering_2        | Laundry energy consumption                   |
+| Sub_metering_3        | Water heater and air conditioner consumption |
 
-Download the dataset from:
+### Dataset Source
+
+The dataset is available from the UCI Machine Learning Repository:
 
 https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
-After downloading, place the CSV file in the project directory before running the code.
+> Note: The dataset is not included in this repository because of GitHub file size limitations.
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 * Python
 * Pandas
@@ -47,58 +64,54 @@ After downloading, place the CSV file in the project directory before running th
 
 ---
 
-## Features Used
+## 🔄 Project Workflow
 
-The model uses:
+### 1. Data Collection
 
-* Voltage
-* Global Reactive Power
-* Global Intensity
-* Sub Metering 1
-* Sub Metering 2
-* Sub Metering 3
+* Household power consumption dataset loaded from CSV.
+
+### 2. Data Preprocessing
+
+* Missing value handling
+* Data type conversion
+* Duplicate removal
+* DateTime conversion
+* Feature extraction
+
+### 3. Feature Engineering
+
+Additional features were created:
+
 * Hour
 * Day
 * Month
 
-Target Variable:
+### 4. Exploratory Data Analysis (EDA)
 
-* Global Active Power
+Several visualizations were created to understand the dataset:
 
----
-
-## Project Workflow
-
-### 1. Data Preprocessing
-
-* Loaded the dataset
-* Handled missing values
-* Converted data types
-* Created DateTime features
-* Removed duplicates
-* Prepared data for training
-
-### 2. Exploratory Data Analysis
-
-Visualizations created:
-
-* Power Consumption Distribution
+* Power Distribution
 * Voltage vs Power Consumption
-* Correlation Heatmap
-* Actual vs Predicted Comparison
+* Correlation Matrix
+* Actual vs Predicted Plot
 * Feature Importance Analysis
 
-### 3. Model Training
+### 5. Model Training
 
-Algorithm Used:
+Algorithm used:
 
 **Random Forest Regressor**
 
-The model was trained to predict household energy consumption based on electrical and time-related features.
+Reasons for selection:
 
-### 4. Model Evaluation
+* Handles large datasets efficiently
+* Captures non-linear relationships
+* Reduces overfitting
+* Provides feature importance scores
 
-Evaluation metrics used:
+### 6. Model Evaluation
+
+Performance was measured using:
 
 * Mean Absolute Error (MAE)
 * Root Mean Squared Error (RMSE)
@@ -106,11 +119,11 @@ Evaluation metrics used:
 
 ---
 
-## Results
+## 📈 Results
 
-Model Performance:
+### Model Performance
 
-| Metric   | Value  |
+| Metric   | Score  |
 | -------- | ------ |
 | MAE      | 0.0184 |
 | RMSE     | 0.0362 |
@@ -120,32 +133,57 @@ The model achieved excellent predictive performance on the test dataset.
 
 ---
 
-## Visualizations
+## 🔍 Feature Importance
 
-The project includes:
+The most influential features were:
 
-* Energy Consumption Distribution
-* Voltage vs Power Consumption Scatter Plot
-* Correlation Matrix Heatmap
-* Actual vs Predicted Comparison
-* Feature Importance Chart
+1. Global Intensity
+2. Voltage
+3. Global Reactive Power
+4. Hour
+5. Sub Metering Values
 
-Screenshots are available inside the **screenshots/** folder.
+Feature importance analysis helps understand the factors affecting energy consumption.
 
 ---
 
-## Project Structure
+## 🖼 Project Visualizations
+
+### Power Distribution
+
+![Power Distribution](Images/power_distribution.png)
+
+### Voltage vs Power Consumption
+
+![Voltage vs Power](Images/voltage_vs_power.png)
+
+### Correlation Matrix
+
+![Correlation Matrix](Images/correlation_heatmap.png)
+
+### Actual vs Predicted
+
+![Actual vs Predicted](Images/actual_vs_predicted.png)
+
+### Feature Importance
+
+![Feature Importance](Images/feature_importance.png)
+
+---
+
+## 📂 Repository Structure
 
 ```text
-Household-Energy-Consumption-Forecasting/
+Energy-Consumption-Forecasting/
+│
+├── Images/
 │
 ├── Energy Consumption Forecasting.py
-├── scaler.pkl
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 │
-└── screenshots/
+└── Images/
     ├── power_distribution.png
     ├── voltage_vs_power.png
     ├── correlation_heatmap.png
@@ -155,15 +193,21 @@ Household-Energy-Consumption-Forecasting/
 
 ---
 
-## Installation
+## ⚙️ Installation
 
-Install the required libraries:
+Clone the repository:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn joblib
+git clone https://github.com/gorlejeevan44-debug/Energy-Consumption-Forecasting.git
 ```
 
-Or install from requirements.txt:
+Navigate into the project folder:
+
+```bash
+cd Energy-Consumption-Forecasting
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -171,7 +215,9 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Project
+## ▶️ Running the Project
+
+Place the downloaded dataset inside the project directory and run:
 
 ```bash
 python "Energy Consumption Forecasting.py"
@@ -179,54 +225,49 @@ python "Energy Consumption Forecasting.py"
 
 The script will:
 
-* Load and preprocess the dataset
-* Train the model
+* Load and preprocess data
+* Train the Random Forest model
 * Generate visualizations
-* Evaluate performance
-* Create model files locally
+* Evaluate model performance
+* Save preprocessing components
 
 ---
 
-## Note
-
-The following files are excluded from this repository because of GitHub file size limitations:
-
-* household_power_consumption.csv
-* energy_model.pkl
-
-The model can be retrained locally by running the project script.
-
----
-
-## Skills Demonstrated
+## 📚 Skills Demonstrated
 
 * Data Cleaning
 * Data Preprocessing
-* Exploratory Data Analysis (EDA)
+* Exploratory Data Analysis
 * Feature Engineering
 * Data Visualization
 * Machine Learning
-* Regression Modeling
+* Regression Analysis
 * Model Evaluation
 * Model Persistence
 
 ---
 
-## Future Improvements
+## 🚀 Future Improvements
+
+Potential future enhancements:
 
 * Time Series Forecasting
 * XGBoost Regression
 * LSTM Neural Networks
 * Streamlit Dashboard
-* Real-Time Energy Monitoring
+* Real-Time Monitoring
 * Cloud Deployment
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-**Gorle Jani Venkata Pavan Sai Jeevan**
+### Gorle Jani Venkata Pavan Sai Jeevan
 
 Engineering Student | Python Developer | Machine Learning & Data Analytics Enthusiast
 
-Always learning and building real-world data-driven solutions.
+Interested in building real-world Machine Learning and Data Analytics solutions using Python.
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
