@@ -23,7 +23,15 @@ This project uses Machine Learning techniques to predict household energy consum
 * Save trained components for future use.
 
 ---
+## Key Results
 
+- R² Score: 0.999
+- RMSE: 0.0362
+- MAE: 0.0184
+- Random Forest Regressor used
+- Dataset contains over 1 million records
+
+---
 ## 📊 Dataset
 
 This project uses the **Individual Household Electric Power Consumption Dataset**.
