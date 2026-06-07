@@ -151,11 +151,11 @@ Feature importance analysis helps understand the factors affecting energy consum
 
 ### Power Distribution
 
-![Power Distribution](Images/Global_Active_Power_Distribution.png)
+![Power Distribution](Images/Global_Active_Power_Distirbution.png)
 
 ### Voltage vs Power Consumption
 
-![Voltage vs Power](Images/Voltage_VS_Power_Consumption.png)
+![Voltage vs Power](Images/Voltage_VS_Power_Consumtion.png)
 
 ### Correlation Matrix
 
@@ -163,7 +163,7 @@ Feature importance analysis helps understand the factors affecting energy consum
 
 ### Actual vs Predicted
 
-![Actual vs Predicted](Images/Actual_VS_Predicted.png)
+![Actual vs Predicted](Images/Actual_VS_Priedicted.png)
 
 ### Feature Importance
 
