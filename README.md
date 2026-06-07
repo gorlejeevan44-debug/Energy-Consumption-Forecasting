@@ -151,23 +151,23 @@ Feature importance analysis helps understand the factors affecting energy consum
 
 ### Power Distribution
 
-![Power Distribution](Images/power_distribution.png)
+![Power Distribution](Images/Global_Active_Power_Distribution.png)
 
 ### Voltage vs Power Consumption
 
-![Voltage vs Power](Images/voltage_vs_power.png)
+![Voltage vs Power](Images/Voltage_VS_Power_Consumption.png)
 
 ### Correlation Matrix
 
-![Correlation Matrix](Images/correlation_heatmap.png)
+![Correlation Matrix](Images/Correlation_Matrix.png)
 
 ### Actual vs Predicted
 
-![Actual vs Predicted](Images/actual_vs_predicted.png)
+![Actual vs Predicted](Images/Actual_VS_Predicted.png)
 
 ### Feature Importance
 
-![Feature Importance](Images/feature_importance.png)
+![Feature Importance](Images/Feature_Importance.png)
 
 ---
 
@@ -184,11 +184,11 @@ Energy-Consumption-Forecasting/
 ├── .gitignore
 │
 └── Images/
-    ├── power_distribution.png
-    ├── voltage_vs_power.png
-    ├── correlation_heatmap.png
-    ├── actual_vs_predicted.png
-    └── feature_importance.png
+    ├── Global_Active_Power_Distribution.png
+    ├── Voltage_VS_Power_Consumption.png
+    ├── Correlation_Matrix.png
+    ├── Actual_VS_Predicted.png
+    └── Feature_Importance.png
 ```
 
 ---
