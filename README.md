@@ -204,13 +204,13 @@ Energy-Consumption-Forecasting/
 Clone the repository:
 
 ```bash
-git clone https://github.com/gorlejeevan44-debug/Energy-Consumption-Forecasting.git
+git clone https://github.com/gorlejeevan44-debug/Energy_Consumption_Forecasting.git
 ```
 
 Navigate into the project folder:
 
 ```bash
-cd Energy-Consumption-Forecasting
+cd Energy_Consumption_Forecasting
 ```
 
 Install dependencies:
