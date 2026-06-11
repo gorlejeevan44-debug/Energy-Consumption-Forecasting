@@ -1,9 +1,17 @@
 # Energy Consumption Forecasting
 ## Machine Learning | Random Forest | Data Analytics
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+### Predicting household energy consumption using Machine Learning techniques and Random Forest Regression.
+### Project Highlights
+## - Dataset: Household Power Consumption
+## - Algorithm: Random Forest Regressor
+## - Language: Python
+## - Libraries: Pandas, NumPy, Matplotlib, Scikit-Learn
+## - Task: Regression
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Random Forest](https://img.shields.io/badge/Model-Random%20Forest-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 ## 📌 Overview
 
 Energy consumption forecasting is an important task in energy management systems. Accurate predictions help optimize energy usage, reduce wastage, and support better decision-making.
